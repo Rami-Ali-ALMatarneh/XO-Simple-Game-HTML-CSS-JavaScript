@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  padding: 50px 20px;
+  gap: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+@media (max-width: 767px) {
+  body {
+    flex-direction: column;
+  }
+}
+.game {
+  width: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.game .squares {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.game .title {
+  background-color: #4169e1;
+  width: 232px;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.game .squares .square {
+  background-color: #4169e1;
+  color: white;
+  flex: 0 0 auto;
+  width: 30%;
+  height: 75px;
+  margin: 4px;
+  transition: 0.5s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.BlueX {
+  background-color: blue;
+}
+.GreenO {
+  background-color: green;
+}
+.Info-game {
+  width: 232px;
+  color: white;
+  background-color: #4169e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+input[type="text"] {
+  outline: none;
+  width: 130px;
+  border: none;
+  padding: 2px 5px;
+}
+.Info-game div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+.Info-game div h3 {
+  margin: 0;
+  padding: 0px 5px;
+}
+.Info-game #btn {
+  padding: 2px 0;
+  width: 50px;
+  background-color: white;
+  color: #4169e1;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.Info-game h1 {
+  margin: 0;
+}
+.btns {
+  background-color: #4169e1;
+  color: white;
+  width: 112px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.5s;
+  margin-top: 4px;
+}
+.btn-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+.btn-div div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#clear:hover {
+  background-color: #ff0000;
+}
+#start:hover {
+  background-color: #008000;
+}
+
+.time {
+  background-color: white;
+  color: #4169e1;
+  padding: 4px;
+}
+a {
+  background-color: white;
+  color: #4169e1;
+  text-decoration: none;
+}

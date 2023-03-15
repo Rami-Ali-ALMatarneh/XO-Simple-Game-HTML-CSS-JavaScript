@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <body>
+    <div class="Info-game">
+      <h1>XO Game</h1>
+      <div>
+        <h3 for="text1">Player1</h3>
+        <input type="text" id="text1" placeholder="insert player" />
+      </div>
+      <div>
+        <h3 for="text1">Player2</h3>
+        <input type="text" id="text2" placeholder="insert player" id="text1" />
+      </div>
+      <div class="btn-div">
+        <div id="btn">Start</div>
+        <div id="btn" class="stop">Stop</div>
+        <a id="btn" href="index.html">Load</a>
+      </div>
+      <p class="time">
+        Timer :- <span class="minute">00</span>:<span class="second">00</span>
+        Minute
+      </p>
+    </div>
+    <div class="game">
+      <div class="title">GaMe</div>
+      <div class="squares">
+        <div class="square" id="item1" data-square="1"></div>
+        <div class="square" id="item2" data-square="2"></div>
+        <div class="square" id="item3" data-square="3"></div>
+        <div class="square" id="item4" data-square="4"></div>
+        <div class="square" id="item5" data-square="5"></div>
+        <div class="square" id="item6" data-square="6"></div>
+        <div class="square" id="item7" data-square="7"></div>
+        <div class="square" id="item8" data-square="8"></div>
+        <div class="square" id="item9" data-square="9"></div>
+      </div>
+      <div class="btn-div">
+        <div id="clear" class="btns">clear</div>
+      </div>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
